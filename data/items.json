@@ -1,0 +1,472 @@
+[
+ {
+  "id": "shoreline-stripe-towel",
+  "name": "Shoreline Stripe Towel",
+  "category": "towels",
+  "art": "towel",
+  "colors": [
+   "#e8604c",
+   "#f7efe2"
+  ],
+  "cost": 14.5,
+  "stock": {
+   "standard": 18,
+   "premium": 6
+  },
+  "blurb": "Thick cotton terry with wide coral stripes. Dries quickly and folds flat.",
+  "tags": [
+   "cotton",
+   "stripe"
+  ],
+  "featured": true
+ },
+ {
+  "id": "rockpool-waffle-towel",
+  "name": "Rockpool Waffle Towel",
+  "category": "towels",
+  "art": "towel",
+  "colors": [
+   "#2f7d86",
+   "#cfe6e3"
+  ],
+  "cost": 16.0,
+  "stock": {
+   "standard": 9,
+   "premium": 3
+  },
+  "blurb": "Light waffle weave that shakes sand off in one flick.",
+  "tags": [
+   "waffle",
+   "lightweight"
+  ]
+ },
+ {
+  "id": "dune-picnic-blanket",
+  "name": "Dune Picnic Blanket",
+  "category": "towels",
+  "art": "blanket",
+  "colors": [
+   "#d9a441",
+   "#fbf3dc"
+  ],
+  "cost": 22.0,
+  "stock": {
+   "standard": 7,
+   "premium": 0
+  },
+  "blurb": "Big enough for four, with a sand-proof backing and a carry strap.",
+  "tags": [
+   "picnic",
+   "family"
+  ],
+  "featured": true
+ },
+ {
+  "id": "little-wave-hooded-towel",
+  "name": "Little Wave Hooded Towel",
+  "category": "towels",
+  "art": "towel",
+  "colors": [
+   "#7bb6d9",
+   "#ffffff"
+  ],
+  "cost": 12.0,
+  "stock": {
+   "standard": 12,
+   "premium": 4
+  },
+  "blurb": "A kids' poncho towel with a hood, for changing on the sand.",
+  "tags": [
+   "kids"
+  ]
+ },
+ {
+  "id": "harbour-canvas-tote",
+  "name": "Harbour Canvas Tote",
+  "category": "bags",
+  "art": "tote",
+  "colors": [
+   "#f1e6cf",
+   "#1f4e5a"
+  ],
+  "cost": 11.0,
+  "stock": {
+   "standard": 25,
+   "premium": 10
+  },
+  "blurb": "Heavy canvas with rope handles and an inside pocket for keys.",
+  "tags": [
+   "canvas"
+  ],
+  "featured": true
+ },
+ {
+  "id": "low-tide-mesh-bag",
+  "name": "Low Tide Mesh Bag",
+  "category": "bags",
+  "art": "mesh",
+  "colors": [
+   "#2f7d86",
+   "#e8604c"
+  ],
+  "cost": 9.0,
+  "stock": {
+   "standard": 14,
+   "premium": 2
+  },
+  "blurb": "Open mesh so the sand falls straight through on the walk home.",
+  "tags": [
+   "mesh"
+  ]
+ },
+ {
+  "id": "esplanade-cooler-bag",
+  "name": "Esplanade Cooler Bag",
+  "category": "bags",
+  "art": "cooler",
+  "colors": [
+   "#1f4e5a",
+   "#d9a441"
+  ],
+  "cost": 24.0,
+  "stock": {
+   "standard": 6,
+   "premium": 2
+  },
+  "blurb": "Keeps a dozen cans cold for an afternoon. Wipe-clean lining.",
+  "tags": [
+   "insulated"
+  ]
+ },
+ {
+  "id": "driftwood-dry-bag",
+  "name": "Driftwood Dry Bag 10L",
+  "category": "bags",
+  "art": "drybag",
+  "colors": [
+   "#f2b33d",
+   "#1f4e5a"
+  ],
+  "cost": 13.0,
+  "stock": {
+   "standard": 0,
+   "premium": 5
+  },
+  "blurb": "Roll-top dry bag for phones and wallets on the boat or board.",
+  "tags": [
+   "waterproof"
+  ]
+ },
+ {
+  "id": "breakwater-bucket-hat",
+  "name": "Breakwater Bucket Hat",
+  "category": "headwear",
+  "art": "bucket",
+  "colors": [
+   "#e7d8b9",
+   "#8a6f55"
+  ],
+  "cost": 10.0,
+  "stock": {
+   "standard": 20,
+   "premium": 8
+  },
+  "blurb": "Soft cotton twill with a chin cord that stays put in the wind.",
+  "tags": [
+   "cotton"
+  ],
+  "featured": true
+ },
+ {
+  "id": "saltline-cap",
+  "name": "Saltline Cap",
+  "category": "headwear",
+  "art": "cap",
+  "colors": [
+   "#1f4e5a",
+   "#f7efe2"
+  ],
+  "cost": 8.5,
+  "stock": {
+   "standard": 30,
+   "premium": 12
+  },
+  "blurb": "Low-profile six-panel cap with a curved brim.",
+  "tags": [
+   "cap"
+  ]
+ },
+ {
+  "id": "wide-brim-sun-hat",
+  "name": "Wide Brim Sun Hat",
+  "category": "headwear",
+  "art": "sunhat",
+  "colors": [
+   "#e9cf94",
+   "#e8604c"
+  ],
+  "cost": 15.0,
+  "stock": {
+   "standard": 5,
+   "premium": 1
+  },
+  "blurb": "Woven straw with a broad brim and a coral band.",
+  "tags": [
+   "straw"
+  ]
+ },
+ {
+  "id": "kids-legionnaire-cap",
+  "name": "Kids Legionnaire Cap",
+  "category": "headwear",
+  "art": "legionnaire",
+  "colors": [
+   "#e8604c",
+   "#ffffff"
+  ],
+  "cost": 7.0,
+  "stock": {
+   "standard": 16,
+   "premium": 0
+  },
+  "blurb": "A cap with a neck flap, for long mornings at the beach.",
+  "tags": [
+   "kids"
+  ]
+ },
+ {
+  "id": "tidepool-insulated-bottle",
+  "name": "Tidepool Insulated Bottle 750 ml",
+  "category": "drinkware",
+  "art": "bottle",
+  "colors": [
+   "#2f7d86",
+   "#f7efe2"
+  ],
+  "cost": 15.0,
+  "stock": {
+   "standard": 22,
+   "premium": 9
+  },
+  "blurb": "Double-wall steel. Cold for a whole beach day.",
+  "tags": [
+   "steel",
+   "insulated"
+  ],
+  "featured": true
+ },
+ {
+  "id": "shallows-tumbler",
+  "name": "Shallows Tumbler",
+  "category": "drinkware",
+  "art": "tumbler",
+  "colors": [
+   "#e8604c",
+   "#f7efe2"
+  ],
+  "cost": 11.0,
+  "stock": {
+   "standard": 11,
+   "premium": 4
+  },
+  "blurb": "A lidded tumbler with a straw, sized for car cup holders.",
+  "tags": [
+   "steel"
+  ]
+ },
+ {
+  "id": "lagoon-kids-bottle",
+  "name": "Lagoon Kids Bottle",
+  "category": "drinkware",
+  "art": "kidsbottle",
+  "colors": [
+   "#7bb6d9",
+   "#d9a441"
+  ],
+  "cost": 8.0,
+  "stock": {
+   "standard": 2,
+   "premium": 0
+  },
+  "blurb": "A small bottle with a flip spout that doesn't leak in the bag.",
+  "tags": [
+   "kids"
+  ]
+ },
+ {
+  "id": "coastline-camp-mug",
+  "name": "Coastline Camp Mug",
+  "category": "drinkware",
+  "art": "mug",
+  "colors": [
+   "#f7efe2",
+   "#1f4e5a"
+  ],
+  "cost": 7.5,
+  "stock": {
+   "standard": 19,
+   "premium": 6
+  },
+  "blurb": "Enamel mug with a speckled finish for sunrise coffee.",
+  "tags": [
+   "enamel"
+  ]
+ },
+ {
+  "id": "sea-salt-candle-tin",
+  "name": "Sea Salt Candle Tin",
+  "category": "extras",
+  "art": "candle",
+  "colors": [
+   "#d9a441",
+   "#1f4e5a"
+  ],
+  "cost": 9.0,
+  "stock": {
+   "standard": 28,
+   "premium": 10
+  },
+  "blurb": "A small travel candle in a screw-top tin. Smells like a salty breeze (if it were real).",
+  "tags": [
+   "candle",
+   "tin"
+  ]
+ },
+ {
+  "id": "sand-art-chalk",
+  "name": "Sand Art Chalk Stick",
+  "category": "extras",
+  "art": "chalk",
+  "colors": [
+   "#e8604c",
+   "#ffffff"
+  ],
+  "cost": 6.0,
+  "stock": {
+   "standard": 24,
+   "premium": 0
+  },
+  "blurb": "Chunky chalk for drawing on footpaths and boardwalks. Washes off with water.",
+  "tags": [
+   "kids",
+   "chalk"
+  ]
+ },
+ {
+  "id": "bubble-blower-tube",
+  "name": "Bubble Blower Tube",
+  "category": "extras",
+  "art": "bubbles",
+  "colors": [
+   "#7fc8a9",
+   "#ffffff"
+  ],
+  "cost": 7.0,
+  "stock": {
+   "standard": 13,
+   "premium": 5
+  },
+  "blurb": "A squeeze tube of bubble mix with a wand in the cap.",
+  "tags": [
+   "kids",
+   "bubbles"
+  ]
+ },
+ {
+  "id": "doodle-crayon",
+  "name": "Beach Doodle Crayon",
+  "category": "extras",
+  "art": "crayon",
+  "colors": [
+   "#7bb6d9",
+   "#f7efe2"
+  ],
+  "cost": 3.5,
+  "stock": {
+   "standard": 40,
+   "premium": 15
+  },
+  "blurb": "A twist-up crayon for postcards and sketchbooks.",
+  "tags": [
+   "pocket",
+   "art"
+  ]
+ },
+ {
+  "id": "sandbar-beach-umbrella",
+  "name": "Sandbar Beach Umbrella",
+  "category": "beach",
+  "art": "umbrella",
+  "colors": [
+   "#e8604c",
+   "#f7efe2"
+  ],
+  "cost": 38.0,
+  "stock": {
+   "standard": 4,
+   "premium": 2
+  },
+  "blurb": "A wide canopy with a screw-in sand anchor and a tilt joint.",
+  "tags": [
+   "shade"
+  ],
+  "featured": true
+ },
+ {
+  "id": "tideline-beach-chair",
+  "name": "Tideline Beach Chair",
+  "category": "beach",
+  "art": "chair",
+  "colors": [
+   "#2f7d86",
+   "#f1e6cf"
+  ],
+  "cost": 32.0,
+  "stock": {
+   "standard": 8,
+   "premium": 3
+  },
+  "blurb": "Low folding chair with a backpack strap and a cup holder.",
+  "tags": [
+   "folding"
+  ]
+ },
+ {
+  "id": "sandcastle-bucket-set",
+  "name": "Sandcastle Bucket Set",
+  "category": "beach",
+  "art": "pail",
+  "colors": [
+   "#d9a441",
+   "#e8604c"
+  ],
+  "cost": 6.5,
+  "stock": {
+   "standard": 15,
+   "premium": 0
+  },
+  "blurb": "Bucket, spade and two moulds that nest together.",
+  "tags": [
+   "kids"
+  ]
+ },
+ {
+  "id": "clearview-snorkel-mask",
+  "name": "Clearview Snorkel Mask",
+  "category": "beach",
+  "art": "mask",
+  "colors": [
+   "#1f4e5a",
+   "#7bb6d9"
+  ],
+  "cost": 18.0,
+  "stock": {
+   "standard": 7,
+   "premium": 2
+  },
+  "blurb": "A wide-view mask with a soft skirt and a dry-top snorkel.",
+  "tags": [
+   "snorkel"
+  ]
+ }
+]

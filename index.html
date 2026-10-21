@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewater Goods · beach and outdoor gear (demo shop)</title>
+<meta name="description" content="Tidewater Goods is a fictional demo shop: a catalogue with stock and variants, a price engine, member prices and a buy-back form. Nothing is for sale.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#16343b">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/art.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="home">
+<main id="main">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Demo shop · fictional</span>
+        <h1>Gear for long days <em>by the water.</em></h1>
+        <p class="lead">Towels, bags, hats and beach kit from a small fictional shop. Browse the catalogue, switch on member prices, or offer us your pre-loved gear.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="shop.html">Browse the shop</a>
+          <a class="btn btn-ghost" href="sell.html">Sell us your gear</a>
+        </div>
+        <div class="hero-stats" aria-label="Shop at a glance">
+          <div><strong id="stat-items">24</strong>items</div>
+          <div><strong id="stat-cats">6</strong>categories</div>
+          <div><strong>2</strong>versions each</div>
+        </div>
+      </div>
+      <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>Popular this week</h2><p>Made-up favourites, priced by the shop's own formula.</p></div>
+        <a class="btn btn-ghost" href="shop.html">See everything</a>
+      </div>
+      <div class="grid" id="featured"></div>
+    </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap">
+      <div class="section-head"><div><h2>How ordering works</h2><p>No card checkout. Orders become a private chat with the shop.</p></div></div>
+      <ol class="steps">
+        <li><h3>Pick your items</h3><p>Choose a version, see live stock, add to your cart.</p></li>
+        <li><h3>Send a request</h3><p>Leave your name and a note. No payment on the website.</p></li>
+        <li><h3>A ticket opens</h3><p>A private channel opens in the shop's Discord with your order in it.</p></li>
+        <li><h3>Staff confirm</h3><p>They check stock, reply in the ticket and arrange pickup.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap features">
+      <div class="feature">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+        <h3>One price formula</h3><p class="muted">Cost, version and category markup set every price, rounded to a .95 ending. Open any item to see the maths.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
+        <h3>Member prices</h3><p class="muted">Flip the switch in the header to see what members pay. It's a demo, so there are no real accounts.</p>
+      </div>
+      <div class="feature">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg>
+        <h3>We buy, too</h3><p class="muted">Pick an item and its condition to get an instant estimate, then send a sell request.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<noscript><p class="noscript"><strong>DEMO SHOP - fictional items, nothing is for sale.</strong> This demo needs JavaScript to show its catalogue.</p></noscript>
+</body>
+</html>

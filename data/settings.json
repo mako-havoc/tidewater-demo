@@ -1,0 +1,135 @@
+{
+  "shop": {
+    "name": "Tidewater Goods",
+    "tagline": "Small-batch beach and outdoor gear from a little shop by the water.",
+    "currency": "AUD",
+    "demo_notice": "DEMO SHOP - fictional items, nothing is for sale."
+  },
+  "pricing": {
+    "markup_by_category": {
+      "towels": 1.05,
+      "bags": 0.95,
+      "headwear": 1.1,
+      "drinkware": 0.9,
+      "beach": 0.8,
+      "extras": 0.85
+    },
+    "variant_cost_factor": {
+      "standard": 1.0,
+      "premium": 1.4
+    },
+    "member_discount": 0.1,
+    "price_ending": 0.95
+  },
+  "variants": [
+    {
+      "id": "standard",
+      "label": "Standard",
+      "blurb": "Everyday materials, built to last a summer or ten."
+    },
+    {
+      "id": "premium",
+      "label": "Premium",
+      "blurb": "Upgraded materials and finish."
+    }
+  ],
+  "categories": [
+    {
+      "id": "towels",
+      "label": "Towels & blankets"
+    },
+    {
+      "id": "bags",
+      "label": "Bags"
+    },
+    {
+      "id": "headwear",
+      "label": "Hats & caps"
+    },
+    {
+      "id": "drinkware",
+      "label": "Drinkware"
+    },
+    {
+      "id": "beach",
+      "label": "Beach gear"
+    },
+    {
+      "id": "extras",
+      "label": "Beach extras"
+    }
+  ],
+  "buy": {
+    "intro": "We buy good pre-loved gear and give it a second summer. Pick an item and its condition, and we'll reply with an offer.",
+    "conditions": [
+      {
+        "id": "fair",
+        "label": "Fair",
+        "blurb": "Works fine, clear signs of use.",
+        "factor": 0.55
+      },
+      {
+        "id": "good",
+        "label": "Good",
+        "blurb": "Light wear, nothing broken.",
+        "factor": 0.8
+      },
+      {
+        "id": "likenew",
+        "label": "Like new",
+        "blurb": "Used once or twice, all parts there.",
+        "factor": 1.0
+      }
+    ],
+    "items": [
+      {
+        "id": "b-surfboard",
+        "name": "Surfboard (any size)",
+        "art": "surfboard",
+        "base_offer": 160,
+        "max_qty": 2,
+        "wanted": true
+      },
+      {
+        "id": "b-wetsuit",
+        "name": "Wetsuit (full or spring)",
+        "art": "wetsuit",
+        "base_offer": 55,
+        "max_qty": 4,
+        "wanted": true
+      },
+      {
+        "id": "b-umbrella",
+        "name": "Beach umbrella",
+        "art": "umbrella",
+        "base_offer": 22,
+        "max_qty": 6,
+        "wanted": true
+      },
+      {
+        "id": "b-chair",
+        "name": "Folding beach chair",
+        "art": "chair",
+        "base_offer": 18,
+        "max_qty": 6,
+        "wanted": true
+      },
+      {
+        "id": "b-cooler",
+        "name": "Cooler box or bag",
+        "art": "cooler",
+        "base_offer": 25,
+        "max_qty": 4,
+        "wanted": true
+      },
+      {
+        "id": "b-snorkel",
+        "name": "Snorkel set",
+        "art": "mask",
+        "base_offer": 15,
+        "max_qty": 8,
+        "wanted": false
+      }
+    ]
+  }
+}

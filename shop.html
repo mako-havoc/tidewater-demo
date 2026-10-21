@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop · Tidewater Goods (demo)</title>
+<meta name="description" content="The Tidewater Goods catalogue: fictional beach and outdoor gear with stock, versions and member prices. A demo shop, nothing is for sale.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#16343b">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/art.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="shop">
+<main id="main">
+  <div class="wrap">
+    <div class="page-head">
+      <h1>The shop</h1>
+      <p class="lead">The full range, with a stock count for each version.</p>
+    </div>
+    <div class="toolbar">
+      <form class="search" id="search-form" role="search">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+        <label for="q" class="visually-hidden">Search the shop</label>
+        <input id="q" type="search" placeholder="Search towels, hats, bottles..." autocomplete="off" maxlength="60">
+      </form>
+      <label class="check"><input type="checkbox" id="in-stock"> In stock only</label>
+      <label class="visually-hidden" for="band">Version</label>
+      <select class="select" id="band">
+        <option value="all">Any version</option>
+        <option value="standard">Standard available</option>
+        <option value="premium">Premium available</option>
+      </select>
+      <label class="visually-hidden" for="sort">Sort by</label>
+      <select class="select" id="sort">
+        <option value="featured">Featured first</option>
+        <option value="price-asc">Price: low to high</option>
+        <option value="price-desc">Price: high to low</option>
+        <option value="name">Name A to Z</option>
+      </select>
+    </div>
+    <div class="chips" id="cat-chips" role="group" aria-label="Categories"></div>
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <div class="grid grid-4" id="grid"></div>
+  </div>
+</main>
+<noscript><p class="noscript"><strong>DEMO SHOP - fictional items, nothing is for sale.</strong> This demo needs JavaScript to show its catalogue.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works · Tidewater Goods (demo)</title>
+<meta name="description" content="How the Tidewater Goods demo shop works, and what a real build for a client adds.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#16343b">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/art.js" defer></script>
+<script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="how">
+<main id="main">
+  <div class="wrap">
+    <div class="page-head prose">
+      <span class="eyebrow">About this demo</span>
+      <h1>How this shop works</h1>
+      <p class="lead">Tidewater Goods is a sample build. It shows a small shop that takes orders through Discord instead of a card checkout. Every item, price and stock count is made up.</p>
+    </div>
+
+    <section class="section prose">
+      <h2>What you can try here</h2>
+      <ul>
+        <li><strong>Catalogue:</strong> 24 items in 6 categories, with search, category filters, sorting and an in-stock filter.</li>
+        <li><strong>Versions with their own stock:</strong> each item comes in Standard and Premium, and each version has its own count.</li>
+        <li><strong>Price engine:</strong> one formula prices everything (base cost × version × category markup, rounded up to .95). Each product page shows the working.</li>
+        <li><strong>Member prices:</strong> the header switch shows what a member would pay (10% off, rounded).</li>
+        <li><strong>Cart and order request:</strong> your cart is kept in this browser only. "Request this order" shows the Discord ticket the shop would receive.</li>
+        <li><strong>We buy:</strong> a buy-back form with condition grades, an instant estimate and a per-request limit.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="prose"><h2>The ticket the shop gets</h2>
+      <p>In a real build, a request opens a private channel in the shop's Discord server. Only the customer and staff can see it, and staff can claim it, reply and close it. Here's a sample:</p></div>
+      <div id="ticket-demo" style="max-width:760px"></div>
+    </section>
+
+    <section class="section">
+      <h2>Demo vs. a real build</h2>
+      <div class="compare">
+        <div class="panel">
+          <h3>This demo</h3>
+          <ul>
+            <li>Static pages and two JSON files, hosted for free</li>
+            <li>Cart saved in your browser only</li>
+            <li>Requests show a preview; nothing is sent</li>
+            <li>Member prices are a switch, not an account</li>
+            <li>Stock is fixed in the data file</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>A client build adds</h3>
+          <ul>
+            <li>A Discord bot that opens real private tickets, with claim, close and transcripts</li>
+            <li>Stock that updates when staff close a sale</li>
+            <li>A simple page for staff to edit items, costs and stock</li>
+            <li>Member accounts linked to Discord, if wanted</li>
+            <li>The shop's own name, items, pictures and domain</li>
+          </ul>
+          <p class="small muted" style="margin-top:12px">Card checkout isn't part of this package.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prose">
+      <h2>Privacy</h2>
+      <p>No cookies and no analytics. Your cart, the member switch and the ticket counter are saved in your own browser's storage and never leave it. The only outside request is for the web fonts, which load from Google Fonts.</p>
+    </section>
+  </div>
+</main>
+<noscript><p class="noscript"><strong>DEMO SHOP - fictional items, nothing is for sale.</strong> This demo needs JavaScript to show its catalogue.</p></noscript>
+</body>
+</html>

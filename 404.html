@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · Tidewater Goods (demo)</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#16343b">
+<script>
+  // GitHub Pages serves this page at whatever URL was missed (e.g. /tidewater-demo/a/b), so the base is pinned to
+  // the site root first and the styles and scripts are added after it. If you rename the repo, change SITE.
+  (function () {
+    var SITE = "/tidewater-demo/";
+    var root = location.pathname.indexOf(SITE) === 0 ? SITE : "/";
+    document.write('<base href="' + root + '">' +
+      '<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">' +
+      '<link rel="stylesheet" href="assets/css/style.css">' +
+      '<script src="assets/js/art.js" defer><\/script>' +
+      '<script src="assets/js/app.js" defer><\/script>');
+  })();
+</script>
+</head>
+<body data-page="missing">
+<main id="main">
+  <div class="wrap">
+    <div class="empty wide" style="padding:80px 16px">
+      <p><strong>DEMO SHOP - fictional items, nothing is for sale.</strong></p>
+      <h1>Washed out to sea.</h1>
+      <p>That page isn't here. Try the shop instead.</p>
+      <a class="btn btn-primary" href="shop.html">Back to the shop</a>
+    </div>
+  </div>
+</main>
+</body>
+</html>
