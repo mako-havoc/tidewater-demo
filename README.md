@@ -20,11 +20,11 @@ It shows what a "catalogue + order-request site" looks like before it's made for
 | Catalogue | 24 made-up items in 6 categories, with search, category filters, sorting, a version filter and an in-stock filter |
 | Versions and stock | Each item has a Standard and a Premium version with its own stock count; sold-out versions can't be added |
 | Price engine | One formula prices everything: `cost × version factor × (1 + category markup)`, rounded up to a .95 price. Every product page shows the working |
-| Member prices | A header switch shows member prices (10% off, rounded). Demo only: there are no accounts |
+| Member prices | A header switch shows member prices (at least 10% off, rounded down to a .95 price). Demo only: there are no accounts |
 | Cart | Kept in the visitor's own browser (`localStorage`, along with the member switch and a ticket counter); quantities are capped at the stock left |
 | Order request | Name, optional Discord username and a note, then a preview of the private Discord ticket the shop would get |
 | We buy | A buy-back page with condition grades (Fair / Good / Like new), an instant estimate and a per-request limit |
-| Pictures | Flat illustrations drawn in code (`assets/js/art.js`). No image files, no stock photos, nothing copyrighted |
+| Pictures | AI-generated studio product photos made for this demo (`assets/img/products/`, WebP). They show made-up, unbranded products: no real brands, logos or people. If an item has no photo, a flat illustration drawn in code (`assets/js/art.js`) is shown instead |
 
 ## How it's built
 

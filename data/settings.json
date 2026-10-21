@@ -3,7 +3,8 @@
     "name": "Tidewater Goods",
     "tagline": "Small-batch beach and outdoor gear from a little shop by the water.",
     "currency": "AUD",
-    "demo_notice": "DEMO SHOP - fictional items, nothing is for sale."
+    "demo_notice": "DEMO SHOP - fictional items, nothing is for sale.",
+    "hero_img": "assets/img/products/hero.webp"
   },
   "pricing": {
     "markup_by_category": {
@@ -88,7 +89,8 @@
         "art": "surfboard",
         "base_offer": 160,
         "max_qty": 2,
-        "wanted": true
+        "wanted": true,
+        "img": "assets/img/products/b-surfboard.webp"
       },
       {
         "id": "b-wetsuit",
@@ -96,7 +98,8 @@
         "art": "wetsuit",
         "base_offer": 55,
         "max_qty": 4,
-        "wanted": true
+        "wanted": true,
+        "img": "assets/img/products/b-wetsuit.webp"
       },
       {
         "id": "b-umbrella",
@@ -104,7 +107,8 @@
         "art": "umbrella",
         "base_offer": 22,
         "max_qty": 6,
-        "wanted": true
+        "wanted": true,
+        "img": "assets/img/products/b-umbrella.webp"
       },
       {
         "id": "b-chair",
@@ -112,7 +116,8 @@
         "art": "chair",
         "base_offer": 18,
         "max_qty": 6,
-        "wanted": true
+        "wanted": true,
+        "img": "assets/img/products/b-chair.webp"
       },
       {
         "id": "b-cooler",
@@ -120,7 +125,8 @@
         "art": "cooler",
         "base_offer": 25,
         "max_qty": 4,
-        "wanted": true
+        "wanted": true,
+        "img": "assets/img/products/b-cooler.webp"
       },
       {
         "id": "b-snorkel",
@@ -128,7 +134,8 @@
         "art": "mask",
         "base_offer": 15,
         "max_qty": 8,
-        "wanted": false
+        "wanted": false,
+        "img": "assets/img/products/b-snorkel.webp"
       }
     ]
   }

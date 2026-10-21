@@ -276,7 +276,7 @@
     foot.className = "site-footer";
     foot.innerHTML = '<div class="wrap foot-grid">' +
       '<div><a class="brand brand-foot" href="' + b + 'index.html">' + logo() + "<span>" + esc(s.name) + "</span></a>" +
-      "<p>" + esc(s.tagline) + "</p><p class=\"muted small\">A fictional shop. Every item, price and stock count here is made up.</p></div>" +
+      "<p>" + esc(s.tagline) + "</p><p class=\"muted small\">A fictional shop. Every item, price and stock count here is made up, and the product photos are AI-generated.</p></div>" +
       '<div><h2 class="foot-h">Shop</h2><ul>' + NAV.map(function (n) { return '<li><a href="' + b + n.href + '">' + esc(n.label) + "</a></li>"; }).join("") + "</ul></div>" +
       '<div><h2 class="foot-h">About this demo</h2><p class="small">A sample build: a catalogue with stock and variants, a price engine, member prices and a buy-back form, with requests that would open a private ticket in the shop\'s Discord.</p>' +
       '<p class="small">Demo build by <strong>HAVOC Devs</strong>. Static site: no cookies or analytics. Web fonts load from Google Fonts.</p></div>' +
@@ -377,7 +377,7 @@
     body.innerHTML = '<ul class="cart-lines">' + c.map(function (l) {
       var it = DATA.byId[l.id], p = price(it, l.variant, m), max = stockOf(it, l.variant);
       return '<li class="cart-line" data-id="' + esc(l.id) + '" data-variant="' + esc(l.variant) + '">' +
-        '<div class="cl-art">' + TWArt.svg(it.art, it.colors, { premium: l.variant === "premium" }) + "</div>" +
+        '<div class="cl-art">' + pic(it) + "</div>" +
         '<div class="cl-main"><a href="' + base() + "item.html?id=" + encodeURIComponent(it.id) + '" class="cl-name">' + esc(it.name) + "</a>" +
           '<div class="muted small">' + esc(variantLabel(l.variant)) + " · " + money(p.final) + " each</div>" +
           '<div class="stepper" role="group" aria-label="Quantity for ' + esc(it.name) + '">' +
@@ -543,13 +543,24 @@
       '<path d="M5 24c4-4 8-4 12 0s8 4 12 0 6-3 7-2" fill="none" stroke="#f7efe2" stroke-width="2.2" stroke-linecap="round"/></svg>';
   }
 
+  // ---------- product pictures: a photo when the item has one, the code-drawn illustration otherwise ----------
+  function pic(it, opts) {
+    opts = opts || {};
+    var badge = opts.premium ? '<span class="pic-badge">Premium</span>' : "";
+    if (it.img) {
+      return '<span class="pic">' + '<img src="' + base() + esc(it.img) + '" alt="' + esc(opts.alt || "") + '"' +
+        (opts.eager ? "" : ' loading="lazy"') + ' decoding="async" width="800" height="800">' + badge + "</span>";
+    }
+    return '<span class="pic pic-art">' + TWArt.svg(it.art, it.colors || ["#0e8fa0", "#ffffff"], { label: opts.alt }) + badge + "</span>";
+  }
+
   // ---------- product card ----------
   function card(it) {
     var m = isMember(), p = price(it, "standard", m), n = totalStock(it), cat = DATA.cat[it.category];
     var url = base() + "item.html?id=" + encodeURIComponent(it.id);
     var std = stockOf(it, "standard");
     return '<article class="card' + (n <= 0 ? " is-out" : "") + '">' +
-      '<a class="card-art" href="' + url + '" tabindex="-1" aria-hidden="true">' + TWArt.svg(it.art, it.colors) + "</a>" +
+      '<a class="card-art" href="' + url + '" tabindex="-1" aria-hidden="true">' + pic(it) + "</a>" +
       '<div class="card-body">' +
         '<div class="card-cat">' + esc(cat ? cat.label : "") + "</div>" +
         '<h3 class="card-title"><a href="' + url + '">' + esc(it.name) + "</a></h3>" +
@@ -579,7 +590,11 @@
     wireQuickAdd(grid);
     document.addEventListener("tw:pricing", draw);
     var hero = $("#hero-art");
-    if (hero) {
+    var heroImg = DATA.settings.shop.hero_img;
+    if (hero && heroImg) {
+      hero.classList.add("hero-photo");
+      hero.innerHTML = '<img src="' + base() + esc(heroImg) + '" alt="" width="1600" height="907" fetchpriority="high">';
+    } else if (hero) {
       hero.innerHTML =
         '<div class="ha ha-1">' + TWArt.svg("umbrella", ["#e8604c", "#f7efe2"]) + "</div>" +
         '<div class="ha ha-2">' + TWArt.svg("towel", ["#2f7d86", "#cfe6e3"]) + "</div>" +
@@ -684,7 +699,7 @@
         '<nav class="crumbs" aria-label="Breadcrumb"><a href="' + base() + 'shop.html">Shop</a><span aria-hidden="true">/</span>' +
           '<a href="' + base() + "shop.html?cat=" + encodeURIComponent(it.category) + '">' + esc(cat.label) + '</a><span aria-hidden="true">/</span><span aria-current="page">' + esc(it.name) + "</span></nav>" +
         '<div class="item-grid">' +
-          '<div class="item-art">' + TWArt.svg(it.art, it.colors, { premium: variant === "premium", label: it.name + " illustration" }) + "</div>" +
+          '<div class="item-art">' + pic(it, { premium: variant === "premium", alt: it.name, eager: true }) + "</div>" +
           '<div class="item-info">' +
             '<div class="card-cat">' + esc(cat.label) + "</div>" +
             "<h1>" + esc(it.name) + "</h1>" +
@@ -764,7 +779,7 @@
     }
     list.innerHTML = B.items.map(function (b) {
       return '<article class="buy-card' + (b.wanted ? "" : " is-paused") + '" data-id="' + esc(b.id) + '">' +
-        '<div class="buy-art">' + TWArt.svg(b.art, ["#2f7d86", "#f1e6cf"]) + "</div>" +
+        '<div class="buy-art">' + pic(b) + "</div>" +
         '<div class="buy-main"><h3>' + esc(b.name) + "</h3>" +
           (b.wanted ? '<p class="muted small">Up to ' + b.max_qty + " per request · best offer " + money(offer(b, "likenew")) + "</p>"
                     : '<p class="muted small">Not buying these right now.</p>') +
